@@ -1,2 +1,8 @@
 name = input("What's your name? -")
 print( "hello," , name)
+
+
+# How to add more commas in commas
+ print ("hello,"friend"") #Wrong way
+print("hello,\"Friend\"")
+OUTPUT - hello,"Friend"

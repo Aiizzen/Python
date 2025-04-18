@@ -6,3 +6,27 @@ print( "hello," , name)
  print ("hello,"friend"") #Wrong way
 print("hello,\"Friend\"")
 OUTPUT - hello,"Friend"
+
+#Another way to print variable in the comma:
+print(f"hello, {name}")
+Output- hello, Jayant
+
+
+# REmove white spaces From str and  capitalise the fist letter
+name - name.strip().title()
+
+************{Example -# ask user for their name
+name = input("What's your name? -")
+
+# REmove white spaces From str and  capitalise the fist letter
+name - name.strip().title()
+
+print(f"hello, {name}")
+
+*At terminal 
+What's your name? -      jayant chaudhary     
+hello, Jayant Chaudhary}****************************
+
+#Or we can just directly written this in one line
+name = input("What's your name? -").strip().title()
+print( "hello," , name)

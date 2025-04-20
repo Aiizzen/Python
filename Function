@@ -30,3 +30,53 @@ hello, Jayant Chaudhary}****************************
 #Or we can just directly written this in one line
 name = input("What's your name? -").strip().title()
 print( "hello," , name)
+
+*************************FLOAT**************************************
+A floating point value is a real number that has a decimal point in it, such as 0.52.
+
+Let’s imagine, however, that you want to round the total to the nearest integer.
+Looking at the Python documentation for round, you’ll see that the available arguments are round(number[n, ndigits]). 
+Those square brackets indicate that something optional can be specified by the programmer. 
+Therefore, you could do round(n) to round a digit to its nearest integer. 
+Alternatively, you could code as follows:
+
+
+# Get the user's input
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+
+
+Let’s imagine that we want to round this down. We could modify our code as follows:
+
+# Get the user's input
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+
+# Calculate the result and round
+z = round(x / y, 2)
+
+# Print the result
+print(z)
+As we might expect, this will round the result to the nearest two decimal points.
+
+We could also use fstring to format the output as follows:
+
+# Get the user's input
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+
+# Calculate the result
+z = x / y
+
+# Print the result
+print(f"{z:.2f}")
+This cryptic fstring code displays the same as our prior rounding strategy.
+
+You can learn more in Python’s documentation of float.
+
+Def
+# Create a rounded result
+z = round(x + y)
+
+# Print the result
+print(z)
